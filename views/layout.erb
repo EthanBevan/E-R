@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artist Search</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+</head>
+<body>
+<% if logged_in? %>
+	User: <%= current_user.username %>
+
+<form action="/session" method ="post">
+	<input type="hidden" name ="_method" value="delete">
+	<button>Logout</button>
+</form>
+<% end %>
+
+<nav>
+	<a href="/">Home</a>
+	<a href="/login">Login</a>
+	<a href="/signuppage">Sign up</a>
+	<a href="/myartists">My Artists</a>
+	<a href="/createevent">Create Artist/Event</a>
+	<a href="/about">About</a>
+
+</nav>
+
+<main>
+  <%= yield %>
+</main>
+
+</body>
+</html>
