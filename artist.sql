@@ -11,6 +11,28 @@ email VARCHAR(300),
 password_digest TEXT
 );
 
+#next
+
+CREATE TABLE artists(
+id SERIAL PRIMARY KEY,
+nameofartist VARCHAR(300),
+image_url VARCHAR(400),
+bio VARCHAR(600)
+FOREIGN KEY (user) REFERENCES users (id) ON DELETE RESTRICT 
+);
+
+CREATE TABLE events(
+id SERIAL PRIMARY KEY,
+tourevent VARCHAR (300),
+address VARCHAR(300),
+city VARCHAR(300),
+dateofconcert VARCHAR(300),
+timeofconcert  VARCHAR(300)
+FOREIGN KEY (artist) REFERENCES artists (id) ON DELETE RESTRICT 
+);
+
+
+
 
 
 

@@ -1,0 +1,5 @@
+pg_dump -Fc --no-acl --no-owner -h localhost -U ethanbevan artist_app_database_official > db.dump
+
+
+heroku pg:backups:restore 'https://github.com/EthanBevan/project_2GA/raw/master/db.dump' DATABASE_URL
+
