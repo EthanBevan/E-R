@@ -10,7 +10,9 @@ img {
 
 p {
  color: white;
- font-family: 'Bungee', cursive; 
+ /*font-family: 'Bungee', cursive; */
+ font-family: 'Bangers', cursive;
+
 	font-size: 18px;
 	align: center;
 	width: 67%;
@@ -31,6 +33,13 @@ p {
     margin: 6px 0;
 
 }
+
+.searchedartist div {
+    margin: 70px 0px 0px 215px;
+   
+
+}
+
 
 .homepage {
 	background-image: url("http://junkee.com/wp-content/uploads/2017/11/Drake-photo-credit-Mushroom-Creative-0068.jpg");
@@ -95,16 +104,18 @@ background-size: cover;
 
 
 h1 {
-	color: white;
+	color: red;
 	margin: 70px 0px 0px 215px;
-	font-family: 'Bungee', cursive; 
+	font-family: 'Bangers', cursive;
+
 
 }
 
 h4 {
-	color: white;
+	color: red;
 	margin: 70px 0px 0px 215px;
-	font-family: 'Bungee', cursive; 
+	font-family: 'Bangers', cursive;
+
 
 }
 
@@ -117,6 +128,16 @@ input {
     	background-color: white;
     	padding: 5px 10px 5px 10px;
 
+}
+
+textarea {
+	color: black;
+	margin: 35px 10px 0px 215px;
+	 border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px red;
+    	background-color: white;
+    	padding: 5px 10px 5px 10px;
 }
 
 
@@ -141,7 +162,25 @@ div {
 margin: 15px 0px 0px 0px;
 }
 
+button {
 
+	color: grey;
+	margin: 0px 0px 0px 0px;
+	 border: 0px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px red;
+    	background-color: white;
+    		padding: 5px 10px 5px 10px;
+
+  
+}
+
+h5 {
+	color: red;
+	font-family: 'Bangers', cursive;
+	font-size: 11px;
+
+}
 
 
 

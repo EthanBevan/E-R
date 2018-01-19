@@ -136,7 +136,7 @@ end
 
 
 
-post '/createevent' do
+post '/createartist' do
 	artist = Artist.new
 	artist.nameofartist = params[:nameofartist]
 	artist.image_url = params[:image_url]
@@ -146,15 +146,15 @@ post '/createevent' do
 end
 
 
-get '/createevent' do 
+get '/createartist' do 
 	unless session[:user_id]
 		redirect '/login' unless logged_in?
 	end
-	erb :createevent
+	erb :createartist
 end 
 
 
-post '/createartist' do 
+post '/createevent' do 
 	artist.tourevent = params[:tourevent]
 	artist.address = params[:address]
 	artist.city = params[:city]
@@ -165,11 +165,11 @@ post '/createartist' do
 	
 end 
 
-get '/createartist' do 
+get '/createevent' do 
 	unless session[:user_id]
 		redirect '/login' unless logged_in?
 	end
-	erb :createartist
+	erb :createevent
 end 
 
 
@@ -178,23 +178,14 @@ end
 get '/about' do 
 	erb :about
 end 
-
-
 
 
 
 
 get '/myprofile' do 
-
-get '/about' do 
-	erb :about
-end 
-
-@artist = Artist.where(user_id: @dish.id)
-
-find(params[:id])
-
-
+unless session[:user_id]
+		redirect '/login' unless logged_in?
+	end
 	erb :myprofile
 end 
 
