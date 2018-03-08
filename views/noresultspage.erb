@@ -1,9 +1,17 @@
+
+<div class="searchedartist">
 <h1> <%= @name %></h1>
+</div>
 <br>
 <br>
+<div class="artistImage">
+<img src="<%= @image %>" width="540" height="350" >
+</div>
 
-<img src="<%= @image %>" width="370" height="250" >
+<div class="detailsArtistsNoResults">
+<h1> No upcoming tours for <%= @name %> <br> in this city at this current time. </h1>
+</div>
 
-<h1> No upcoming tours for <%= @name %> in this city at this current time. </h1>
-
+<div class="ArtistSearchAgainButton">
 <a href="/">Search Again</a>
+</div>
